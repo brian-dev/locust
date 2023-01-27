@@ -10,6 +10,6 @@ class WebsiteTestUser(HttpUser):
     def on_stop(self):
         pass
 
-    @task(1)
+    @task(2)
     def hello_world(self):
         self.client.get('http://localhost:5000')
